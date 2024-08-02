@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="{{ url_for('static', filename='ripple.js') }}" defer></script>
+</head>
+<body>
+    <canvas id="c"></canvas>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/appointment">Appointment</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="water-effect">
+            <section id="about">
+                <h1>About Me</h1>
+                <p>This is the about page. Here you can find information about me.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
